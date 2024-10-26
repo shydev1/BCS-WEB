@@ -1,0 +1,91 @@
+.news-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.3);
+  background:  #444;
+  height: 40px;
+}
+
+.news-container .title {
+  position: absolute;
+  background: #df2020;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  color: white;
+  font-weight: bold;
+  z-index: 50;
+  margin-right: 100%;
+}
+
+.news-container ul {
+  list-style: none;
+  margin: 0;
+  animation: scroll 25s infinite linear;
+}
+
+.news-container ul li {
+  /* color: rgb(97, 72, 212); */
+  color: #fff;
+  position: relative;
+  margin-top: -6px;
+  cursor: pointer;
+  font: bolder;
+  text-transform: capitalize;
+  
+}
+
+.news-container ul li::after {
+  content: "";
+  width: 1px;
+  height: 50%;
+  background: #b8b8b8;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.news-container ul li:last-child::after {
+  display: none;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-1083px);
+  }
+}
+
+/* Styling for smaller screens */
+@media (max-width: 640px) {
+  .news-container ul {
+    /* display: flex;    */
+    /* border: solid 2px green;    */
+    width: 800%;
+  }
+
+  .news-container ul li {
+    padding: 10px 24px;
+    white-space: nowrap;
+    /* width: 1000%; */
+  }
+
+  .news-container ul li::after {
+    display: none;
+  }
+  .news-container .title {
+    width: 90px;
+    color: #fff;
+  }
+  .news-container .title h1 {
+    position: absolute;
+    margin-left: -19px;
+  }
+}

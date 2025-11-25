@@ -4,13 +4,6 @@ import { getFirestore, doc, setDoc, getDoc, updateDoc } from 'firebase/firestore
 import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBo9CUsKlEGUkYTsjdTy5n6Q3X9i7ec-RQ",
-  authDomain: "bcs-public-portal.firebaseapp.com",
-  projectId: "bcs-public-portal",
-  storageBucket: "bcs-public-portal.appspot.com",
-  messagingSenderId: "823547668549",
-  appId: "1:823547668549:web:4f556bc096f5d480e49b2c",
-  measurementId: "G-VEHR0EV9P3"
   // apiKey: "AIzaSyBlbmEz0BX3vaBdkiUZ6p_rlPNHPWvsvzg",
   // authDomain: "scooter-beccf.firebaseapp.com",
   // projectId: "scooter-beccf",
